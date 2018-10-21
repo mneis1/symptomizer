@@ -30,7 +30,7 @@ def cleanData(diagnosis_names, probability_values):
     combined = np.vstack((diagnosis_names, probability_values)).T
     combined = combined[combined[:, 1].argsort()]
     combined = np.flip(combined, axis=0)
-    return combined
+    return combined[:5]
 
 def doItAll(data_path, prediction_data):
     lr = LogisticRegression(solver='newton-cg', multi_class='multinomial')
