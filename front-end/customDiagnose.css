@@ -1,0 +1,11 @@
+.bg-dark {
+    background-color: #dd2222!important;
+}
+
+.container {
+    max-width: 50000px !important;
+}
+
+#pie-chart {
+    min-height: 350px;
+}
